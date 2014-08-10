@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Load more</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="posts">
+			<div class="items">
+				<div class="item">
+					<h3><span data-field="nome"></span> (<span data-field="id"></span>)</h3>
+					<p data-field="descricao"></p>
+				</div>
+			</div>
+			<a href="#" class="items-load">Load more</a>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/loadmore.js"></script>
+		<script>
+			$('.posts').loadmore({
+				source: 'posts.php',
+				step: 2
+			});
+		</script>
+	</body>
+</html>
