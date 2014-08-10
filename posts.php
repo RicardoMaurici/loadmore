@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-$pdo = new PDO("mysql:host=localhost; dbname=territorio;charset=UTF8", "root", 1234);
+$pdo = new PDO("mysql:host=localhost; dbname= ;charset=UTF8", "", ""); //conexao com o banco
 
 $posts = [];
 
